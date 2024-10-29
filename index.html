@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphical Password Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="form-container">
+            <!-- Signup Form -->
+            <div id="signup-form" class="form">
+                <h2>Sign Up</h2>
+                <input type="text" id="signup-userid" placeholder="User ID" style="align-content: center;" required>
+                <p style="align-items: center;">Select a sequence of images for your password:</p>
+                <div id="image-selection">
+                    <img src="images/image1.jpg" alt="Animal 1" onclick="selectImage('animal1.jpg')" class="selectable-image">
+                    <img src="images/image2.jpg" alt="Animal 2" onclick="selectImage('animal2.jpg')" class="selectable-image">
+                    <img src="images/image3.jpg" alt="Animal 3" onclick="selectImage('animal3.jpg')" class="selectable-image">
+                    <img src="images/image4.jpg" alt="Animal 4" onclick="selectImage('animal4.jpg')" class="selectable-image">
+                    <img src="images/image5.jpg" alt="Animal 5" onclick="selectImage('animal5.jpg')" class="selectable-image">
+                    <img src="images/image6.jpg" alt="Animal 6" onclick="selectImage('animal6.jpg')" class="selectable-image">
+                    <img src="images/image7.jpg" alt="Animal 7" onclick="selectImage('animal7.jpg')" class="selectable-image">
+                    <img src="images/image8.jpg" alt="Animal 8" onclick="selectImage('animal8.jpg')" class="selectable-image">
+                    <img src="images/image9.jpg" alt="Animal 9" onclick="selectImage('animal9.jpg')" class="selectable-image">
+                </div>
+                <button onclick="signUp()">Sign Up</button>
+                <p>Already have an account? <a href="#" onclick="showLogin()">Log In</a></p>
+                <p id="signup-message" style="text-align: center;"></p>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form" class="form" style="display:none;">
+                <h2>Log In</h2>
+                <input type="text" id="login-userid" placeholder="User ID" style="align-content: center;">
+                <p>Select your password sequence:</p>
+                <div id="login-image-selection">
+                    <img src="images/image1.jpg" alt="Animal 1" onclick="selectLoginImage('animal1.jpg')" class="selectable-image">
+                    <img src="images/image2.jpg" alt="Animal 2" onclick="selectLoginImage('animal2.jpg')" class="selectable-image">
+                    <img src="images/image3.jpg" alt="Animal 3" onclick="selectLoginImage('animal3.jpg')" class="selectable-image">
+                    <img src="images/image4.jpg" alt="Animal 4" onclick="selectLoginImage('animal4.jpg')" class="selectable-image">
+                    <img src="images/image5.jpg" alt="Animal 5" onclick="selectLoginImage('animal5.jpg')" class="selectable-image">
+                    <img src="images/image6.jpg" alt="Animal 6" onclick="selectLoginImage('animal6.jpg')" class="selectable-image">
+                    <img src="images/image7.jpg" alt="Animal 7" onclick="selectLoginImage('animal7.jpg')" class="selectable-image">
+                    <img src="images/image8.jpg" alt="Animal 8" onclick="selectLoginImage('animal8.jpg')" class="selectable-image">
+                    <img src="images/image9.jpg" alt="Animal 9" onclick="selectLoginImage('animal9.jpg')" class="selectable-image">
+                </div>
+                <button onclick="logIn()">Log In</button>
+                <p>Don't have an account? <a href="#" onclick="showSignUp()">Create One</a></p>
+                <p id="login-message" style="text-align: center;"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

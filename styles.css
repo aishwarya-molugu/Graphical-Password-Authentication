@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#app {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;  /* Adjusted width for better alignment */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all items in the form container */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#image-selection, #login-image-selection {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for multiple rows */
+    justify-content: space-between; /* Space images evenly */
+    width: 100%; /* Ensure the row takes full width */
+    margin-bottom: 15px;
+}
+
+.selectable-image {
+    width: 30%;  /* Set width to approximately 30% to fit 3 images in a row */
+    height: 90px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border 0.3s;
+    margin-bottom: 10px; /* Margin for spacing between rows */
+}
+
+.selectable-image:hover {
+    border: 2px solid #007BFF; /* Highlight border on hover */
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px; /* Margin for spacing between button and text */
+    width: 100%; /* Full width for buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
